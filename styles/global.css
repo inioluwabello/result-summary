@@ -12,45 +12,41 @@ body {
 }
 
 @font-face {
-  font-family: "Poppins-Bold";
-  src: local("Poppins-Bold"),
-    url("../public/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  font-family: "HankenGrotesk-Regular";
+  src: local("HankenGrotesk-Regular"),
+    url("../public/assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "HankenGrotesk-Medium";
+  src: local("HankenGrotesk-Medium"),
+    url("../public/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "HankenGrotesk-Bold";
+  src: local("HankenGrotesk-Bold"),
+    url("../public/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
 }
-
 @font-face {
-  font-family: "Poppins-BoldItalic";
-  src: local("Poppins-BoldItalic"),
-    url("../public/assets/fonts/Poppins-BoldItalic.ttf") format("truetype");
-  font-weight: 700i;
-}
-
-@font-face {
-  font-family: "Poppins-ExtraBold";
-  src: local("Poppins-ExtraBold"),
-    url("../public/assets/fonts/Poppins-ExtraBold.ttf") format("truetype");
+  font-family: "HankenGrotesk-ExtraBold";
+  src: local("HankenGrotesk-ExtraBold"),
+    url("../public/assets/fonts/static/HankenGrotesk-ExtraBold.ttf") format("truetype");
   font-weight: 800;
 }
 
-@font-face {
-  font-family: "Poppins-ExtraBoldItalic";
-  src: local("Poppins-ExtraBoldItalic"),
-    url("../public/assets/fonts/Poppins-ExtraBoldItalic.ttf") format("truetype");
-  font-weight: 800i;
+.fontFaceHankenGroteskRegular {
+  font-family: "HankenGrotesk-Regular" !important;
 }
-
-@font-face {
-  font-family: "Poppins-Italic";
-  src: local("Poppins-Italic"),
-    url("../public/assets/fonts/Poppins-Italic.ttf") format("truetype");
-  font-weight: 400i;
+.fontFaceHankenGroteskMedium {
+  font-family: "HankenGrotesk-Medium" !important;
 }
-
-@font-face {
-  font-family: "Poppins-Regular";
-  src: local("Poppins-Regular"),
-    url("../public/assets/fonts/Poppins-Regular.ttf") format("truetype");
-  font-weight: 400;
+.fontFaceHankenGroteskBold {
+  font-family: "HankenGrotesk-Bold" !important;
+}
+.fontFaceHankenGroteskExtraBold {
+  font-family: "HankenGrotesk-ExtraBold" !important;
 }
 
 
@@ -105,111 +101,12 @@ img {
 }
 
 
-.fontFacePoppinsBold {
-  font-family: "Poppins-Bold" !important;
-}
-
-.fontFaceRobotoBoldItalic {
-  font-family: "Poppins-BoldItalic" !important;
-}
-
-.fontFaceRobotoExtraBold {
-  font-family: "Poppins-ExtraBold" !important;
-}
-
-.fontFaceRobotoExtraBoldItalic {
-  font-family: "Poppins-ExtraBoldItalic" !important;
-}
-
-.fontFaceRobotoItalic {
-  font-family: "Poppins-Italic" !important;
-}
-
-.fontFaceRobotoRegular {
-  font-family: "Poppins-Regular" !important;
-}
-
-.white {
-  background: hsl(0, 0%, 100%)
-}
-
-.white-color {
-  color: hsl(0, 0%, 100%)
-}
-
-.off-white {
-  background: hsl(0, 0%, 94%);
-}
-
-.off-white-color {
-  color: hsl(0, 0%, 94%);
-}
-
-.light-grey {
-  background: hsl(0, 0%, 86%);
-}
-
-.smokey-grey-color {
-  color: hsl(0, 1%, 44%);
-}
-
-.off-black-color {
-  color: hsl(0, 0%, 8%);
-}
-
-.purple-bg {
-  background-color: hsl(259, 100%, 65%);
-}
-
-.purple-color {
-  color: hsl(259, 100%, 65%);
-}
-
-.light-red-color {
-  color: hsl(0, 100%, 67%);
-}
-
-
 .content {
   height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
   overflow: auto;
-}
-
-@media only screen and (max-width: 700px) {
-  .centered-content {
-    width: 100% !important;
-    padding: 1rem;
-  }
-
-  .age-display>h1>div>div {
-    /* min-width: 31%; */
-    font-size: 2rem !important;
-    margin-right: 1rem;
-  }
-
-  .icon {
-    display: none !important;
-  }
-
-  .icon-mobile {
-    display: block !important;
-  }
-
-  .age-display {
-    margin-top: 3rem;
-  }
-
-  .line {
-    width: 100%;
-  }
-  
-  .date-item {
-    width: 28% !important;
-    margin-right: 6%;
-  }
 }
 
 .centered-content {
@@ -228,72 +125,10 @@ img {
   border-radius: 1rem 1rem 10rem 1rem;
 }
 
-.line {
-  width: calc(100% - 40px);
-  position: relative;
-  top: 1rem;
-}
+@media only screen and (max-width: 700px) {
+  .centered-content {
+    width: 100% !important;
+    padding: 1rem;
+  }
 
-.icon {
-  display: block;
-}
-
-.icon-mobile {
-  display: none;
-}
-
-.icon,
-.icon-mobile {
-  border-radius: 50px;
-  padding: 0.8rem;
-}
-
-
-.icon>img,
-.icon-mobile>img {
-  width: 40px;
-}
-
-.icon-mobile {
-  position: absolute;
-  top: -2rem;
-  left: calc(50% - 40px);
-}
-
-.date-item {
-  width: 22%;
-  margin-right: 6%;
-}
-
-.date-item>label,
-.date-item>span {
-  font-size: .65rem;
-  height: 15px;
-}
-
-.date-item>label,
-.date-item>input,
-.date-item>span {
-  display: block;
-  width: 100%;
-}
-
-.date-item>input {
-  border: 1px solid #cccccc;
-  padding: 0.5rem;
-  border-radius: 5px;
-  outline: none;
-}
-
-.date-item>input.error {
-  border: 1px solid hsl(0, 100%, 67%) !important;
-}
-
-.age-display>h1>div>div {
-  font-size: 5rem;
-  margin-right: 1rem;
-}
-
-.age-display>h1>div>div.purple-color {
-  text-align: right;
 }
