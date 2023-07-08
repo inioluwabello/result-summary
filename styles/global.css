@@ -17,18 +17,21 @@ body {
     url("../public/assets/fonts/HankenGrotesk-VariableFont_wght.ttf") format("truetype");
   font-weight: 400;
 }
+
 @font-face {
   font-family: "HankenGrotesk-Medium";
   src: local("HankenGrotesk-Medium"),
     url("../public/assets/fonts/static/HankenGrotesk-Medium.ttf") format("truetype");
   font-weight: 500;
 }
+
 @font-face {
   font-family: "HankenGrotesk-Bold";
   src: local("HankenGrotesk-Bold"),
     url("../public/assets/fonts/static/HankenGrotesk-Bold.ttf") format("truetype");
   font-weight: 700;
 }
+
 @font-face {
   font-family: "HankenGrotesk-ExtraBold";
   src: local("HankenGrotesk-ExtraBold"),
@@ -39,21 +42,189 @@ body {
 .fontFaceHankenGroteskRegular {
   font-family: "HankenGrotesk-Regular" !important;
 }
+
 .fontFaceHankenGroteskMedium {
   font-family: "HankenGrotesk-Medium" !important;
 }
+
 .fontFaceHankenGroteskBold {
   font-family: "HankenGrotesk-Bold" !important;
 }
+
 .fontFaceHankenGroteskExtraBold {
   font-family: "HankenGrotesk-ExtraBold" !important;
 }
+
+.light-red {
+  color: hsl(0, 100%, 67%);
+}
+
+.light-red-bg {
+  background: hsl(0deg 100% 67% / 10%);
+}
+
+.orangey-yellow {
+  color: hsl(39, 100%, 56%);
+}
+
+.orangey-yellow-bg {
+  background: hsl(39deg 100% 56% / 10%);
+}
+
+.green-teal {
+  color: hsl(166, 100%, 37%);
+}
+
+.green-teal-bg {
+  background: hsl(166deg 100% 37% / 17%);
+}
+
+.cobalt-blue {
+  color: hsl(234, 85%, 45%);
+}
+
+.cobalt-blue-bg {
+  background: hsl(234deg 85% 45% / 14%);
+}
+
+.pale-blue {
+  color: hsl(221deg 100% 96% / 58%);
+}
+
+.pale-blue-bg {
+  background: hsl(221, 100%, 96%);
+}
+
+.light-lavender {
+  color: hsl(241, 100%, 89%);
+}
+
+.light-lavender-bg {
+  background: hsl(241, 100%, 89%);
+}
+
+.dark-grey-blue {
+  color: hsl(224, 30%, 27%);
+}
+
+.dark-grey-blue-bg {
+  background: hsl(224, 30%, 27%);
+}
+
+.white-bg {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.white {
+  color: hsl(0, 0%, 100%);
+}
+
+.content-wrapper {
+  min-height: 200px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 2px 3px 4px #ebf1ff;
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+  .centered-content {
+    width: 100% !important;
+    align-items: start !important;
+  }
+
+  .content-wrapper {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .main>.right,
+  .main>.left {
+    width: 100% !important;
+  }
+
+  .main>.left {
+    border-radius: 0 0 20px 20px !important;
+  }
+}
+
+.main {
+  display: flex;
+}
+
+.main>.right,
+.main>.left {
+  padding: 2rem;
+}
+
+.main>.left {
+  width: 50%;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, #6844ff, #5d3ffa, #5139f5, #4434f0, #352feb);
+}
+
+.score {
+  background-image: linear-gradient(to bottom, #4c23c8, #4b27d1, #4a2bda, #482fe3, #4533ec);
+  border-radius: 100px;
+  height: 135px;
+  width: 135px;
+  padding: 1.8rem;
+  text-align: center;
+  margin: 0px auto;
+  position: relative;
+  top: 1rem;
+}
+
+.main>.right {
+  width: 50%;
+}
+
+.text-sm {
+  font-size: .8rem;
+}
+.text-md {
+  font-size: .9rem;
+}
+.text-lg {
+  font-size: 1.5rem;
+}
+.text-xl {
+  font-size: 3rem;
+}
+.bold {
+  font-weight: bold;
+}
+.icon > img {
+  margin-right: .5rem;
+}
+.list-item {
+  padding: .5rem;
+  border-radius: 5px;
+}
+.continue {
+  border-radius: 40px;
+  padding: .5rem;
+  border: 0;
+  display: block;
+  width: 100%;
+}
+
+.score-total{
+  display: inline-block;
+  position: relative;
+  top: -1rem;
+}
+
+
 
 
 
 img {
   max-width: 100%;
-  display: block;
 }
 
 .text-right {
@@ -100,7 +271,6 @@ img {
   position: absolute;
 }
 
-
 .content {
   height: 100vh;
   width: 100%;
@@ -110,25 +280,10 @@ img {
 }
 
 .centered-content {
-  width: 700px;
+  width: 500px;
   min-height: 100%;
   margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.content-wrapper {
-  min-height: 200px;
-  width: 100%;
-  padding: 3rem;
-  border-radius: 1rem 1rem 10rem 1rem;
-}
-
-@media only screen and (max-width: 700px) {
-  .centered-content {
-    width: 100% !important;
-    padding: 1rem;
-  }
-
 }
