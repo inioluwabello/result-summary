@@ -8,7 +8,7 @@ const Index = () => {
       <Layout>
         <div className="centered-content HankenGrotesk-Regular">
           <div className="content-wrapper">
-            <div className="main">
+            <main className="main">
               <div className="left white">
                 <div className="left-header text-center text-md ">
                   Your Result
@@ -81,7 +81,7 @@ const Index = () => {
 
                 <button className="continue mt-3 dark-grey-blue-bg white text-sm fontFaceHankenGroteskRegular bold">Continue</button>
               </div>
-            </div>
+            </main>
           </div>
         </div>
       </Layout>
